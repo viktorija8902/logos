@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+/* 
+.left-side {
+  width: 30%;
+}
+
+.right-side {
+  width: 70%;
+} */
+
+img.item-with-logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 4px;
+}
+
+img.item-with-logo:hover {
+  filter: brightness(70%);
+}

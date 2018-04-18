@@ -1,19 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import SharingModal from "./SharingModal";
 import './App.css';
 
 class App extends Component {
   render() {
+    const itemsWithLogo = [
+      {
+        id: "1",
+        thmb: "./images/logoExamples/logo-thmb.png",
+        description: "Logo"
+      },
+      {
+        id: "2",
+        thmb: "./images/logoExamples/t-shirt-thmb.png",
+        description: "T-shirt with logo"
+      },
+      {
+        id: "3",
+        thmb: "./images/logoExamples/bc-thmb.png",
+        description: "Business card with logo"
+      },
+      {
+        id: "4",
+        thmb: "./images/logoExamples/social-media.png", //rename because of ad blocker
+        description: "Logo on mobile"
+      }
+    ];
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <SharingModal itemsWithLogo={itemsWithLogo}/>
     );
   }
 }
