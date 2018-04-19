@@ -4,11 +4,46 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* logo button */
+.logo-wrapper {
+  position: relative;
+}
+
+.logo-wrapper .logo {
+  position: absolute;
+}
+
+.logo-wrapper .share-btn {
+  position: absolute;
+  top: 165px;
+  left: 179px;
+  z-index: 1;
+}
+
+.logo-wrapper:hover .logo {
+  filter: brightness(60%);
+}
+
+.share-btn {
+  display: none;
+}
+
+.logo-wrapper:hover .share-btn {
+  display: block;
+}
+
+.share-btn:hover {
+  cursor: pointer;
+}
+
+
 /* modal */
 .page-cover {
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #424a51;
+  z-index: 2;
 }
 
 .item-sharing-modal {
@@ -35,6 +70,7 @@ body {
   width: 16px;
   padding-top: 20px;
   padding-right: 20px;
+  cursor: pointer;
 }
 
 /* social media icons */
@@ -74,13 +110,12 @@ body {
   border-radius: 4px;
 }
 
-.minified-item:hover {
+.minified-item:hover, .clicked-minified-item {
   filter: brightness(70%);
 }
 
 .clicked-minified-item {
   position: relative;
-  filter: brightness(70%);
 }
 
 .clicked-minified-item .minified-item {
@@ -132,4 +167,5 @@ body {
 .footer a {
   font-size: 14px;
   color: #4f6df5;
+  text-decoration: none;
 }

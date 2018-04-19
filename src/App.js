@@ -1,8 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import SharingModal from "./SharingModal";
-import './App.css';
+import Logo from "./Logo";
+import "./App.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.handleItemClick = this.handleItemClick.bind(this);
+    this.state = {
+      showModal: false
+    };
+  }
+
+  handleItemClick() {
+    this.setState({
+      showModal: !this.state.showModal
+    });
+  }
+
   render() {
     const itemsWithLogo = [
       {
@@ -30,8 +45,20 @@ class App extends Component {
         description: "Logo on mobile"
       }
     ];
+    let modal = null;
+    if (this.state.showModal) {
+      modal = (
+        <SharingModal
+          itemsWithLogo={itemsWithLogo}
+          onLogoClick={this.handleItemClick}
+        />
+      );
+    }
     return (
-      <SharingModal itemsWithLogo={itemsWithLogo}/>
+      <div>
+        <Logo onLogoClick={this.handleItemClick}/>
+        <div>{modal}</div>
+      </div>
     );
   }
 }

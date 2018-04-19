@@ -29,7 +29,7 @@ class SharingModal extends React.Component {
     return (
       <div className="page-cover">
         <div className="item-sharing-modal">
-          <ExitBtn />
+          <ExitBtn onExitClick={this.props.onLogoClick} />
           <Icons />
           <div className="viewing-container">
             <MinifiedItems
