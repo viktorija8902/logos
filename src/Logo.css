@@ -1,0 +1,30 @@
+.logo-wrapper {
+  position: relative;
+}
+
+.logo-wrapper .logo {
+  position: absolute;
+}
+
+.logo-wrapper .share-btn {
+  position: absolute;
+  top: 165px;
+  left: 179px;
+  z-index: 1;
+}
+
+.logo-wrapper:hover .logo {
+  filter: brightness(60%);
+}
+
+.share-btn {
+  display: none;
+}
+
+.logo-wrapper:hover .share-btn {
+  display: block;
+}
+
+.share-btn:hover {
+  cursor: pointer;
+}
