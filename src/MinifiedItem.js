@@ -11,18 +11,33 @@ class MinifiedItem extends Component {
   }
 
   render() {
-    // if (this.props.isItemClicked) {
-    //   return
-    // }
-    return (
-      <img
-        className="minified-item"
-        id={this.props.id}
-        src={this.props.src}
-        alt={this.props.alt}
-        onClick={this.handleClick}
-      />
-    );
+    if (this.props.isItemClicked) {
+      return (
+        <div className="clicked-minified-item">
+          <img
+            className="minified-item"
+            id={this.props.id}
+            src={this.props.src}
+            alt={this.props.alt}
+          />
+          <img
+            className="clicked-icon"
+            src="./images/buttons/check.png"
+            alt="clicked-item"
+          />
+        </div>
+      );
+    } else {
+      return (
+        <img
+          className="minified-item"
+          id={this.props.id}
+          src={this.props.src}
+          alt={this.props.alt}
+          onClick={this.handleClick}
+        />
+      );
+    }
   }
 }
 

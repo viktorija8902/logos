@@ -25,7 +25,7 @@ class App extends Component {
       },
       {
         id: "4",
-        thmb: "./images/logoExamples/social-media.png", //rename because of ad blocker
+        thmb: "./images/logoExamples/phone.png",
         img: "./images/logoExamples/sm-lg.png",
         description: "Logo on mobile"
       }
