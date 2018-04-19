@@ -1,9 +1,9 @@
 import React from "react";
+import MediaIcons from "./MediaIcons.js";
+import ExitBtn from "./ExitBtn.js";
 import MinifiedItems from "./MinifiedItems.js";
 import EnlargedItem from "./EnlargedItem.js";
 import { Footer } from "./Footer.js";
-import Icons from "./Icons.js";
-import ExitBtn from "./ExitBtn.js";
 
 //TODO implement props validation everywhere
 class SharingModal extends React.Component {
@@ -30,7 +30,7 @@ class SharingModal extends React.Component {
       <div className="page-cover">
         <div className="item-sharing-modal">
           <ExitBtn onExitClick={this.props.onLogoClick} />
-          <Icons />
+          <MediaIcons />
           <div className="viewing-container">
             <MinifiedItems
               itemsWithLogo={this.props.itemsWithLogo}

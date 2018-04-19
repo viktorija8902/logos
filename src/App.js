@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SharingModal from "./SharingModal";
-import Logo from "./Logo";
+import SharingModal from "./js/modal/SharingModalComp";
+import Logo from "./js/Logo";
 import "./App.css";
 
 class App extends Component {

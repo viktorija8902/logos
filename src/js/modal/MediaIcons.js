@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Icon } from "./Icon.js";
+import { MediaIcon } from "./MediaIcon.js";
 
-class Icons extends Component {
+class MediaIcons extends Component {
   render() {
     const iconsData = [
       { name: "twitter", src: "./images/socialMediaIcons/twitter.png" },
@@ -11,7 +11,7 @@ class Icons extends Component {
     ];
 
     const icons = iconsData.map(icon => (
-      <Icon
+      <MediaIcon
         key={icon.name}
         name={icon.name}
         src={icon.src}
@@ -28,4 +28,4 @@ class Icons extends Component {
   }
 }
 
-export default Icons;
+export default MediaIcons;
