@@ -12,6 +12,7 @@ class Icons extends Component {
 
     const icons = iconsData.map(icon => (
       <Icon
+        key={icon.name}
         name={icon.name}
         src={icon.src}
         alt={`Click to share on ${icon.name}`}
