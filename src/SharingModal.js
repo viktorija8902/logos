@@ -40,7 +40,7 @@ class SharingModal extends React.Component {
             <div>
               <EnlargedItem
                 id={this.state.clickedItem.id}
-                src={this.state.clickedItem.thmb}
+                src={this.state.clickedItem.img}
                 alt={this.state.clickedItem.description}
               />
               <Footer />
