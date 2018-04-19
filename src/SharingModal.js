@@ -35,7 +35,7 @@ class SharingModal extends React.Component {
             <MinifiedItems
               itemsWithLogo={this.props.itemsWithLogo}
               onItemClick={this.handleItemClick}
-              clickedItem={this.props.clickedItem}
+              clickedItem={this.state.clickedItem}
             />
             <div>
               <EnlargedItem
