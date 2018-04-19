@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-class LogoExample extends Component {
+class MinifiedItem extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -16,14 +16,14 @@ class LogoExample extends Component {
     // }
     return (
       <img
+        className="minified-item"
         id={this.props.id}
-        src={this.props.src} 
+        src={this.props.src}
         alt={this.props.alt}
         onClick={this.handleClick}
-        className="item-with-logo"
       />
-    )
+    );
   }
 }
 
-export default LogoExample;
+export default MinifiedItem;

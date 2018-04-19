@@ -1,8 +1,8 @@
 import React from "react";
 
-export function Description(props) {
+export function Footer(props) {
   return (
-    <div>
+    <div className="footer">
       <h1>The #1 Free Logo Maker - Logojoy</h1>
       <p>
         His father was a sheriff in Bucks County and his Mother worked as a

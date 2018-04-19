@@ -1,13 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
+/* modal */
 .page-cover {
   width: 100%;
   height: 100vh;
-  background-color: #424A51;
+  background-color: #424a51;
 }
 
 .item-sharing-modal {
@@ -21,23 +22,95 @@ body {
   max-height: 90%;
   overflow: auto;
   border-radius: 4px;
-  background-color: #FFFFFF;
-}
-/* 
-.left-side {
-  width: 30%;
+  background-color: #ffffff;
 }
 
-.right-side {
-  width: 70%;
-} */
+/* exit modal button */
+.exit-btn-wrapper {
+  text-align: right;
+}
 
-img.item-with-logo {
+.exit-btn-wrapper .exit-btn {
+  height: 16px;
+  width: 16px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+/* social media icons */
+.media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-icons .share-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.media-icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+}
+
+/* viewing-container */
+.viewing-container {
+  display: flex;
+  margin: 25px 55px;
+  width: 545px;
+}
+
+/* minified items in the viewing-container */
+.viewing-container .minified-items {
+  padding-right: 13px;
+}
+
+.minified-item {
   height: 120px;
   width: 120px;
+  margin-bottom: 10px;
   border-radius: 4px;
 }
 
-img.item-with-logo:hover {
+.minified-item:hover {
   filter: brightness(70%);
+}
+
+/* enlarged item in the viewing container */
+.viewing-container .enlarged-item {
+  height: 358px;
+  width: 545px;
+  border-radius: 4px 4px 0 0;
+  background-color: #16c79e;
+}
+
+/* footer of the viewing-container */
+.viewing-container .footer {
+  width: 495px;
+  margin-top: -5px;
+  padding: 28px 25px 24px 25px;
+  border: 1px solid #d4dbe8;
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+}
+
+.footer h1 {
+  margin: 0;
+  padding-bottom: 14px;
+  font-size: 18px;
+  color: #090b17;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #535971;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #4f6df5;
 }

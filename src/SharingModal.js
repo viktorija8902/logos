@@ -1,16 +1,17 @@
-import React, { Component } from "react";
-import { Navigation } from "./Navigation.js";
-import ReviewedLogoExample from "./ReviewedLogoExample.js";
-import { Description } from "./Description.js";
+import React from "react";
+import MinifiedItems from "./MinifiedItems.js";
+import EnlargedItem from "./EnlargedItem.js";
+import { Footer } from "./Footer.js";
 import Icons from "./Icons.js";
+import ExitBtn from "./ExitBtn.js";
 
 //TODO implement props validation everywhere
-class SharingModal extends Component {
+class SharingModal extends React.Component {
   constructor(props) {
     super(props);
     this.handleItemClick = this.handleItemClick.bind(this);
     this.state = {
-      clickedItem: this.props.itemsWithLogo[0],
+      clickedItem: this.props.itemsWithLogo[0]
     };
   }
 
@@ -28,25 +29,26 @@ class SharingModal extends Component {
     return (
       <div className="page-cover">
         <div className="item-sharing-modal">
-          <Icons/>
-          <div>
-            <Navigation 
+          <ExitBtn />
+          <Icons />
+          <div className="viewing-container">
+            <MinifiedItems
               itemsWithLogo={this.props.itemsWithLogo}
               onItemClick={this.handleItemClick}
               clickedItem={this.props.clickedItem}
             />
-            <div className="righ-side">
-              <ReviewedLogoExample 
+            <div>
+              <EnlargedItem
                 id={this.state.clickedItem.id}
-                src={this.state.clickedItem.thmb} 
+                src={this.state.clickedItem.thmb}
                 alt={this.state.clickedItem.description}
               />
-              <Description/>
+              <Footer />
             </div>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
