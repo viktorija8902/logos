@@ -26,21 +26,23 @@ class SharingModal extends Component {
 
   render() {
     return (
-      <div>
-        <Icons/>
-        <div>
-          <Navigation 
-            itemsWithLogo={this.props.itemsWithLogo}
-            onItemClick={this.handleItemClick}
-            clickedItem={this.props.clickedItem}
-          />
-          <div className="righ-side">
-            <ReviewedLogoExample 
-              id={this.state.clickedItem.id}
-              src={this.state.clickedItem.thmb} 
-              alt={this.state.clickedItem.description}
+      <div className="page-cover">
+        <div className="item-sharing-modal">
+          <Icons/>
+          <div>
+            <Navigation 
+              itemsWithLogo={this.props.itemsWithLogo}
+              onItemClick={this.handleItemClick}
+              clickedItem={this.props.clickedItem}
             />
-            <Description/>
+            <div className="righ-side">
+              <ReviewedLogoExample 
+                id={this.state.clickedItem.id}
+                src={this.state.clickedItem.thmb} 
+                alt={this.state.clickedItem.description}
+              />
+              <Description/>
+            </div>
           </div>
         </div>
       </div>
