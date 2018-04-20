@@ -6,6 +6,7 @@ import EnlargedItem from "./enlargedItem/EnlargedItem.js";
 import { Footer } from "./footer/Footer.js";
 
 //TODO implement props validation everywhere
+//TODO write tests
 class SharingModal extends React.Component {
   constructor(props) {
     super(props);
