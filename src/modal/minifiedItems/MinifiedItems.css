@@ -12,7 +12,7 @@
 }
 
 .clicked-item-wrapper, .item-wrapper:hover {
-  filter: brightness(70%);
+  filter: brightness(45%);
 }
 
 .clicked-item-wrapper .minified-item {
