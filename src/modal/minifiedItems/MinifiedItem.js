@@ -17,12 +17,12 @@ class MinifiedItem extends React.Component {
           <img
             className="minified-item"
             src={this.props.src}
-            alt={this.props.alt}
+            alt={`clicked item: ${this.props.alt}`}
           />
           <img
             className="clicked-icon"
             src="./images/buttons/check.png"
-            alt="clicked-item"
+            alt={`clicked item: ${this.props.alt}`}
           />
         </div>
       );
@@ -33,7 +33,7 @@ class MinifiedItem extends React.Component {
             className="minified-item"
             id={this.props.id}
             src={this.props.src}
-            alt={this.props.alt}
+            alt={`click to choose ${this.props.alt}`}
             onClick={this.handleClick}
           />
         </div>
