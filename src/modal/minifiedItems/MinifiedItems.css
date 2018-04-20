@@ -2,21 +2,16 @@
   padding-right: 13px;
 }
 
-.clicked-item-wrapper,
-.minified-item {
+.clicked-item-wrapper, .item-wrapper {
+  position: relative;
   height: 120px;
   width: 120px;
   margin-bottom: 10px;
   border-radius: 4px;
 }
 
-.clicked-item-wrapper,
-.minified-item:hover {
+.clicked-item-wrapper, .item-wrapper:hover {
   filter: brightness(70%);
-}
-
-.clicked-item-wrapper {
-  position: relative;
 }
 
 .clicked-item-wrapper .minified-item {

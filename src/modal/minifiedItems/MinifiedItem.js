@@ -28,13 +28,15 @@ class MinifiedItem extends React.Component {
       );
     } else {
       return (
-        <img
-          className="minified-item"
-          id={this.props.id}
-          src={this.props.src}
-          alt={this.props.alt}
-          onClick={this.handleClick}
-        />
+        <div className="item-wrapper">
+          <img
+            className="minified-item"
+            id={this.props.id}
+            src={this.props.src}
+            alt={this.props.alt}
+            onClick={this.handleClick}
+          />
+        </div>
       );
     }
   }
