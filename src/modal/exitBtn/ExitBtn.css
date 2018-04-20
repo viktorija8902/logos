@@ -1,0 +1,11 @@
+.exit-btn-wrapper {
+  text-align: right;
+}
+
+.exit-btn-wrapper .exit-btn {
+  height: 16px;
+  width: 16px;
+  padding-top: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}

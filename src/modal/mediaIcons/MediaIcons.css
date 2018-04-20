@@ -1,0 +1,16 @@
+.media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-icons .share-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.media-icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+}

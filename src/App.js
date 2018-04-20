@@ -1,18 +1,63 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SharingModal from "./modal/SharingModalComp";
+import Logo from "./logo/Logo";
+import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleItemClick = this.handleItemClick.bind(this);
+    this.state = {
+      showModal: false
+    };
+  }
+
+  handleItemClick() {
+    this.setState({
+      showModal: !this.state.showModal
+    });
+  }
+
   render() {
+    const itemsWithLogo = [
+      {
+        id: "1",
+        thmb: "./images/logoExamples/logo-thmb.png",
+        img: "./images/logoExamples/logo-lg.png",
+        description: "Logo"
+      },
+      {
+        id: "2",
+        thmb: "./images/logoExamples/t-shirt-thmb.png",
+        img: "./images/logoExamples/shirt-lg.png",
+        description: "T-shirt with logo"
+      },
+      {
+        id: "3",
+        thmb: "./images/logoExamples/bc-thmb.png",
+        img: "./images/logoExamples/bc-lg.png",
+        description: "Business card with logo"
+      },
+      {
+        id: "4",
+        thmb: "./images/logoExamples/phone.png",
+        img: "./images/logoExamples/sm-lg.png",
+        description: "Logo on mobile"
+      }
+    ];
+    let modal = null;
+    if (this.state.showModal) {
+      modal = (
+        <SharingModal
+          itemsWithLogo={itemsWithLogo}
+          onLogoClick={this.handleItemClick}
+        />
+      );
+    }
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Logo onLogoClick={this.handleItemClick}/>
+        <div>{modal}</div>
       </div>
     );
   }

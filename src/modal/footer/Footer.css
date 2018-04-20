@@ -1,0 +1,28 @@
+.viewing-container .footer {
+  width: 495px;
+  margin-top: -5px;
+  padding: 28px 25px 24px 25px;
+  border: 1px solid #d4dbe8;
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+}
+
+.footer h1 {
+  margin: 0;
+  padding-bottom: 14px;
+  font-size: 18px;
+  color: #090b17;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #535971;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #4f6df5;
+  text-decoration: none;
+}

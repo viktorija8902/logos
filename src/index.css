@@ -1,5 +1,12 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+@import "./App.css";
+
+/* chosen logo */
+@import "./logo/Logo.css";
+
+/* modal */
+@import "./modal/enlargedItem/EnlargedItem.css";
+@import "./modal/exitBtn/ExitBtn.css";
+@import "./modal/footer/Footer.css";
+@import "./modal/mediaIcons/MediaIcons.css";
+@import "./modal/minifiedItems/MinifiedItems.css";
+@import "./modal/SharingModalComp.css";

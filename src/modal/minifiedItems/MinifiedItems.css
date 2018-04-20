@@ -1,0 +1,34 @@
+.viewing-container .minified-items {
+  padding-right: 13px;
+}
+
+.clicked-item-wrapper, .item-wrapper {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 13px;
+  border-radius: 4px;
+}
+
+.item-wrapper {
+  transition: 0.7s;
+}
+
+.clicked-item-wrapper .minified-item,
+.item-wrapper:hover {
+  filter: brightness(45%);
+}
+
+.clicked-item-wrapper .minified-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.clicked-item-wrapper .clicked-icon {
+  position: absolute;
+  top: 45px;
+  left: 42px;
+  z-index: 2;
+}
