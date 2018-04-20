@@ -16,7 +16,6 @@ class MinifiedItem extends React.Component {
         <div className="clicked-minified-item">
           <img
             className="minified-item"
-            id={this.props.id}
             src={this.props.src}
             alt={this.props.alt}
           />

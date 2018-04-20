@@ -13,7 +13,6 @@ class MediaIcons extends React.Component {
     const icons = iconsData.map(icon => (
       <MediaIcon
         key={icon.name}
-        name={icon.name}
         src={icon.src}
         alt={`Click to share on ${icon.name}`}
       />

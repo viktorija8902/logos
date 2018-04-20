@@ -2,16 +2,16 @@
   padding-right: 13px;
 }
 
-.minified-item,
-.clicked-minified-item {
+.clicked-minified-item,
+.minified-item {
   height: 120px;
   width: 120px;
   margin-bottom: 10px;
   border-radius: 4px;
 }
 
-.minified-item:hover,
-.clicked-minified-item {
+.clicked-minified-item,
+.minified-item:hover {
   filter: brightness(70%);
 }
 
