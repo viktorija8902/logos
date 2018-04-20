@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class ExitBtn extends Component {
+class ExitBtn extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);

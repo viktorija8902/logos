@@ -1,8 +1,12 @@
 @import "./App.css";
-@import "./EnlargedItem.css";
-@import "./ExitBtn.css";
-@import "./Footer.css";
-@import "./Logo.css";
-@import "./MediaIcons.css";
-@import "./MinifiedItems.css";
-@import "./SharingModalComp.css";
+
+/* chosen logo */
+@import "./logo/Logo.css";
+
+/* modal */
+@import "./modal/enlargedItem/EnlargedItem.css";
+@import "./modal/exitBtn/ExitBtn.css";
+@import "./modal/footer/Footer.css";
+@import "./modal/mediaIcons/MediaIcons.css";
+@import "./modal/minifiedItems/MinifiedItems.css";
+@import "./modal/SharingModalComp.css";

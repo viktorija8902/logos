@@ -1,9 +1,9 @@
 import React from "react";
-import MediaIcons from "./MediaIcons.js";
-import ExitBtn from "./ExitBtn.js";
-import MinifiedItems from "./MinifiedItems.js";
-import EnlargedItem from "./EnlargedItem.js";
-import { Footer } from "./Footer.js";
+import MediaIcons from "./mediaIcons/MediaIcons.js";
+import ExitBtn from "./exitBtn/ExitBtn.js";
+import MinifiedItems from "./minifiedItems/MinifiedItems.js";
+import EnlargedItem from "./enlargedItem/EnlargedItem.js";
+import { Footer } from "./footer/Footer.js";
 
 //TODO implement props validation everywhere
 class SharingModal extends React.Component {

@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import SharingModal from "./js/modal/SharingModalComp";
-import Logo from "./js/Logo";
+import React from "react";
+import SharingModal from "./modal/SharingModalComp";
+import Logo from "./logo/Logo";
 import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleItemClick = this.handleItemClick.bind(this);

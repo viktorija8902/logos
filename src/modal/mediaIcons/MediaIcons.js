@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { MediaIcon } from "./MediaIcon.js";
 
-class MediaIcons extends Component {
+class MediaIcons extends React.Component {
   render() {
     const iconsData = [
       { name: "twitter", src: "./images/socialMediaIcons/twitter.png" },

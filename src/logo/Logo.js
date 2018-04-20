@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Logo extends Component {
+class Logo extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
