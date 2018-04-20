@@ -13,7 +13,7 @@ class MinifiedItem extends React.Component {
   render() {
     if (this.props.isItemClicked) {
       return (
-        <div className="clicked-minified-item">
+        <div className="clicked-item-wrapper">
           <img
             className="minified-item"
             src={this.props.src}

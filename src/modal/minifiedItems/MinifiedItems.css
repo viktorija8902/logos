@@ -2,7 +2,7 @@
   padding-right: 13px;
 }
 
-.clicked-minified-item,
+.clicked-item-wrapper,
 .minified-item {
   height: 120px;
   width: 120px;
@@ -10,23 +10,23 @@
   border-radius: 4px;
 }
 
-.clicked-minified-item,
+.clicked-item-wrapper,
 .minified-item:hover {
   filter: brightness(70%);
 }
 
-.clicked-minified-item {
+.clicked-item-wrapper {
   position: relative;
 }
 
-.clicked-minified-item .minified-item {
+.clicked-item-wrapper .minified-item {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-.clicked-minified-item .clicked-icon {
+.clicked-item-wrapper .clicked-icon {
   position: absolute;
   top: 45px;
   left: 42px;
