@@ -22,6 +22,6 @@
 
 .viewing-container {
   display: flex;
-  margin: 25px 55px;
+  margin: 20px 55px 25px 55px;
   width: 545px;
 }
