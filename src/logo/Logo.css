@@ -4,6 +4,7 @@
 
 .logo-wrapper .logo {
   position: absolute;
+  transition: 1s;
 }
 
 .logo-wrapper .share-btn {
