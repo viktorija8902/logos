@@ -8,10 +8,14 @@
   width: 120px;
   margin-bottom: 13px;
   border-radius: 4px;
+}
+
+.item-wrapper {
   transition: 0.7s;
 }
 
-.clicked-item-wrapper, .item-wrapper:hover {
+.clicked-item-wrapper .minified-item,
+.item-wrapper:hover {
   filter: brightness(45%);
 }
 
